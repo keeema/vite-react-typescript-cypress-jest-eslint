@@ -2,3 +2,7 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npm run format
+npm run lint:fix
+git update-index --again
+npm run build
+npm run test:unit:ci
